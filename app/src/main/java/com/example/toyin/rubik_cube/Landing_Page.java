@@ -56,6 +56,6 @@ public class Landing_Page extends AppCompatActivity {
                         dialog.cancel();
                         Landing_Page.this.finish();
                     }
-                }).setIcon(android.R.drawable.ic_dialog_alert).show();
+                }).setIcon(android.R.drawable.screen_background_light).show();
     }
 }
