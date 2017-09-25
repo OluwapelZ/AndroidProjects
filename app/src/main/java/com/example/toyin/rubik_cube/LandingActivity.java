@@ -46,7 +46,9 @@ public class LandingActivity extends AppCompatActivity {
 
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.cancel();
-                        LandingActivity.this.finish();
+//                        LandingActivity.this.finish();
+                        System.exit(1);
+
                     }
                 })
                 .setNegativeButton("Okay", new DialogInterface.OnClickListener() {
