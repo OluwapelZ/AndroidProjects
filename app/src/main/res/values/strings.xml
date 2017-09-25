@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Rubik_Cube</string>
+    <string name="app_name">CubeIt</string>
     <string name="play_button">Play</string>
     <string name="quit_button">Quit</string>
 </resources>

@@ -8,7 +8,7 @@ import android.support.v7.app.AppCompatActivity;
  * Created by Toyin on 19/09/2017.
  */
 
-public class Splash_Screen extends AppCompatActivity {
+public class SplashActivity extends AppCompatActivity {
 
     public boolean _active = true;
     public int _splashTime = 3000;
@@ -34,8 +34,8 @@ public class Splash_Screen extends AppCompatActivity {
 
                 } finally {
 
-                    startActivity(new Intent(Splash_Screen.this,
-                            Landing_Page.class));
+                    startActivity(new Intent(SplashActivity.this,
+                            LandingActivity.class));
                     finish();
                 }
             }

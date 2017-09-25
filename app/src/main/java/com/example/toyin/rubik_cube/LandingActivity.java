@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Landing_Page extends AppCompatActivity {
+public class LandingActivity extends AppCompatActivity {
 
     private Button play_button, quit_button;
 
@@ -24,8 +24,7 @@ public class Landing_Page extends AppCompatActivity {
         play_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Move to the question_page.
-                Intent intent = new Intent(Landing_Page.this, Question_Page.class);
+                Intent intent = new Intent(LandingActivity.this, RubikActivity.class);
                 startActivity(intent);
             }
         });
@@ -39,7 +38,7 @@ public class Landing_Page extends AppCompatActivity {
     }
 
     public void showExitMessage(){
-        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(Landing_Page.this);
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(LandingActivity.this);
         alertDialogBuilder.setTitle("Exit Application");
         alertDialogBuilder.setMessage("Spend a little more time will you")
                 .setCancelable(true)
@@ -47,14 +46,13 @@ public class Landing_Page extends AppCompatActivity {
 
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.cancel();
-
+                        LandingActivity.this.finish();
                     }
                 })
                 .setNegativeButton("Okay", new DialogInterface.OnClickListener() {
 
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.cancel();
-                        Landing_Page.this.finish();
                     }
                 }).setIcon(android.R.drawable.screen_background_light).show();
     }

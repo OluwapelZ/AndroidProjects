@@ -8,12 +8,12 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Landing_Page">
+        <activity android:name=".LandingActivity">
         </activity>
 
-        <activity android:name=".Question_Page">
+        <activity android:name=".RubikActivity">
         </activity>
-        <activity android:name=".Splash_Screen">
+        <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
